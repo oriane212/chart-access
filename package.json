@@ -1,0 +1,29 @@
+{
+  "name": "chart-access",
+  "version": "1.0.0",
+  "description": "Make a chart accessible",
+  "main": "index.js",
+  "dependencies": {
+    "rollup": "^1.27.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oriane212/chart-access.git"
+  },
+  "keywords": [
+    "chart-access",
+    "accessible",
+    "charts"
+  ],
+  "author": "oriane daley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oriane212/chart-access/issues"
+  },
+  "homepage": "https://github.com/oriane212/chart-access#readme"
+}
