@@ -2,13 +2,18 @@
   "name": "chart-access",
   "version": "1.0.0",
   "description": "Make a chart accessible",
-  "main": "index.js",
-  "dependencies": {
-    "rollup": "^1.27.8"
+  "main": "main.js",
+  "module": "main.es.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "rollup": "^1.27.8",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "typescript": "^3.7.3"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tsc -p './test/' -m 'CommonJS' && jest",
     "build": "rollup --config"
   },
   "repository": {
@@ -25,5 +30,10 @@
   "bugs": {
     "url": "https://github.com/oriane212/chart-access/issues"
   },
-  "homepage": "https://github.com/oriane212/chart-access#readme"
+  "homepage": "https://github.com/oriane212/chart-access#readme",
+  "jest":{
+    "testPathIgnorePatterns":["/node_modules/",".d.ts", ".ts"]
+  }
+
+
 }
