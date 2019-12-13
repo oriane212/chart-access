@@ -1,12 +1,12 @@
 
-let access = require("../main");
+// Tests for main.ts, NOT main.js anymore
+import access from '../src/main';
+import {coffeeChart} from '../charts/barchart';
 
-const fbtxt = access.generateFallbackText("Coffees by Month", "bar");
+let chart = coffeeChart;
 
-function someTSFunc(title: string){
-    return title;
-}
+const fbtxt = access.generateFallbackText(chart);
 
 test("fallback text is as expected", ()=> {
-    expect(fbtxt).toEqual("bar chart titled, 'Coffees by Month'.");
+    expect(fbtxt).toEqual("bar chart titled, 'Coffees Consumed by Month'.");
 });

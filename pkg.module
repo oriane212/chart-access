@@ -1,16 +1,16 @@
 /**
  * generate fallback text for canvas
- * @param title Chart.js object title
- * @param type Chart.js object type
+ * @param chartconfig of chartConfig interface
  *
  * @returns {string}
  */
-function generateFallbackText(title, type) {
-    if (title === "") {
-        return "Untitled " + type + " chart";
+function generateFallbackText(chartconfig) {
+    console.log(chartconfig.data.datasets[0].label);
+    if (chartconfig.options.title.text === "") {
+        return "Untitled " + chartconfig.type + " chart";
     }
     else {
-        return type + " chart titled, '" + title + "'.";
+        return chartconfig.type + " chart titled, '" + chartconfig.options.title.text + "'.";
     }
 }
 
