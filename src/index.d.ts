@@ -1,6 +1,6 @@
 // Type definitions for chart-access
 
-export default interface chartConfig {
+export interface chartConfig {
     type: string,
 
     data: {
@@ -16,3 +16,7 @@ export default interface chartConfig {
     }
     
 }
+
+export interface checkThreshold{
+    (chartconfig: chartConfig, t: number): boolean;
+} 
