@@ -1,22 +1,15 @@
 // Type definitions for chart-access
 
-export interface chartConfig {
-    type: string,
-
-    data: {
-        labels: string[],
-        datasets: { label: string, data: number[], backgroundColor: string } []
-      },
-      
-    options: {
-        title: {
-          display: boolean,
-          text: string
-        }
-    }
-    
-}
+import * as chartjs from 'chart.js';
 
 export interface checkThreshold{
-    (chartconfig: chartConfig, t: number): boolean;
+    (chartconfig: chartjs.ChartConfiguration, t: number): boolean;
 } 
+
+export interface stringArrayFromData {
+  (data: number[] | chartjs.ChartPoint[]) : string[];
+}
+
+export interface editString {
+  (string: string): string;
+}

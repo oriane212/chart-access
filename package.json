@@ -6,9 +6,12 @@
   "module": "main.es.js",
   "dependencies": {},
   "devDependencies": {
+    "@types/chart.js": "^2.9.5",
     "@types/jest": "^24.0.23",
+    "chart.js": "^2.9.3",
     "jest": "^24.9.0",
     "rollup": "^1.27.8",
+    "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-typescript2": "^0.25.3",
     "typescript": "^3.7.3"
   },
@@ -31,9 +34,11 @@
     "url": "https://github.com/oriane212/chart-access/issues"
   },
   "homepage": "https://github.com/oriane212/chart-access#readme",
-  "jest":{
-    "testPathIgnorePatterns":["/node_modules/",".d.ts", ".ts"]
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      ".d.ts",
+      ".ts"
+    ]
   }
-
-
 }

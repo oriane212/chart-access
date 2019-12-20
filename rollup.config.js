@@ -1,5 +1,6 @@
 import typescript from 'rollup-plugin-typescript2';
 import pkg from './package.json';
+import serve from 'rollup-plugin-serve';
 
 export default {
     input: 'src/main.ts',
@@ -22,6 +23,7 @@ export default {
         ...Object.keys(pkg.peerDependencies || {}),
       ],
     plugins: [
-        typescript()
+        typescript(),
+        serve()
     ]
   };
