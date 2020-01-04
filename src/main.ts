@@ -1,7 +1,7 @@
-import generateFallbackText from './generateFallbackText';
+import addFallback from './addFallback';
 
 const access = {
-    generateFallbackText
+    addFallback
 }
 
 export default access;

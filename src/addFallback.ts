@@ -83,12 +83,13 @@ let generateStringContainingData = function (chartconfig: chartjs.ChartConfigura
 
 
 /**
- * generate fallback text for canvas
+ * generate fallback text for chart
+ * 
  * @param chartconfig: ChartConfiguration interface
  * 
  * @returns {string}
  */
-export default function generateFallbackText(chartconfig: chartjs.ChartConfiguration) {
+export function generateFallbackText(chartconfig: chartjs.ChartConfiguration) {
 
     let text1: string;
     let text2: string;
@@ -109,13 +110,25 @@ export default function generateFallbackText(chartconfig: chartjs.ChartConfigura
     }
 
     //substring 2
+    /*
     if (datapointsThreshold(chartconfig, datapoints)) {
         text2 = generateStringContainingData(chartconfig);
     } else {
         text2 = "";
     }
+    */
 
-    return `${text1} ${text2}`;
+    return `${text1}`;
 
 }
 
+
+/**
+ * add fallback text for chart its canvas
+ * 
+ * @param chart: Chart instance
+ */
+export default function addFallback(chart: Chart) {
+    chart.canvas.innerText = generateFallbackText(chart.config);
+    return ;
+}

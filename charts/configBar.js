@@ -1,6 +1,6 @@
 "use strict";
 exports.__esModule = true;
-exports.bar1 = {
+exports.hBar1 = {
     type: 'horizontalBar',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
@@ -36,7 +36,7 @@ exports.bar1 = {
         }
     }
 };
-exports.bar2 = {
+exports.bar1 = {
     type: 'bar',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
@@ -90,11 +90,6 @@ exports.coffeeChart = {
             text: 'Coffees Consumed by Month'
         },
         scales: {
-            xAxes: [
-                {
-                    maxBarThickness: 40
-                }
-            ],
             yAxes: [
                 {
                     ticks: {

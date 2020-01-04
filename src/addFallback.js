@@ -75,7 +75,8 @@ var generateStringContainingData = function (chartconfig) {
     return datastring;
 };
 /**
- * generate fallback text for canvas
+ * generate fallback text for chart
+ *
  * @param chartconfig: ChartConfiguration interface
  *
  * @returns {string}
@@ -99,12 +100,23 @@ function generateFallbackText(chartconfig) {
         text1 = "Untitled " + chartType + " chart.";
     }
     //substring 2
+    /*
     if (datapointsThreshold(chartconfig, datapoints)) {
         text2 = generateStringContainingData(chartconfig);
-    }
-    else {
+    } else {
         text2 = "";
     }
-    return text1 + " " + text2;
+    */
+    return "" + text1;
 }
-exports["default"] = generateFallbackText;
+exports.generateFallbackText = generateFallbackText;
+/**
+ * add fallback text for chart its canvas
+ *
+ * @param chart: Chart instance
+ */
+function addFallback(chart) {
+    chart.canvas.innerText = generateFallbackText(chart.config);
+    return;
+}
+exports["default"] = addFallback;

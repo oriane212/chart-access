@@ -4,12 +4,16 @@
   "description": "Make a chart accessible",
   "main": "main.js",
   "module": "main.es.js",
-  "dependencies": {},
+  "dependencies": {
+    "chart.js": "^2.9.3"
+  },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^6.0.0",
     "@types/chart.js": "^2.9.5",
     "@types/jest": "^24.0.23",
     "chart.js": "^2.9.3",
     "jest": "^24.9.0",
+    "jest-canvas-mock": "^2.2.0",
     "rollup": "^1.27.8",
     "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-typescript2": "^0.25.3",
@@ -35,6 +39,7 @@
   },
   "homepage": "https://github.com/oriane212/chart-access#readme",
   "jest": {
+    "setupFiles": ["jest-canvas-mock"],
     "testPathIgnorePatterns": [
       "/node_modules/",
       ".d.ts",

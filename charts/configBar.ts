@@ -1,5 +1,6 @@
+import * as chartjs from 'chart.js';
 
-export const bar1 = {
+export let hBar1: chartjs.ChartConfiguration = {
   type: 'horizontalBar',
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
@@ -36,7 +37,7 @@ export const bar1 = {
   }
 }
 
-export const bar2 = {
+export let bar1: chartjs.ChartConfiguration = {
   type: 'bar',
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
@@ -78,7 +79,7 @@ export const bar2 = {
 let hot = "rgba(140, 127, 114, 0.4)";
 let iced = "rgba(112, 91, 58, 0.4)";
 
-export const coffeeChart = {
+export let coffeeChart: chartjs.ChartConfiguration = {
   type: "bar",
 
   data: {
@@ -96,11 +97,6 @@ export const coffeeChart = {
     },
 
     scales: {
-      xAxes: [
-        {
-          maxBarThickness: 40
-        }
-      ],
       yAxes: [
         {
           ticks: {
