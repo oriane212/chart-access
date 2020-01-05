@@ -6,16 +6,13 @@ export default {
     input: 'src/main.ts',
     output: [
         {
-            file: 'main.js',
-            format: 'cjs'
-        },
-        {
-            file: 'pkg.main',
-            format: 'cjs'
-        },
-        {
             file: 'pkg.module',
             format: 'es'
+        },
+        {
+            file: 'main.js',
+            format: 'iife',
+            name: 'chartaccess'
         }
     ],
     external: [
