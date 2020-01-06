@@ -1,4 +1,6 @@
 # chart-access
+![npm](https://img.shields.io/npm/v/chart-access)
+
 Add an accessible, auto-generated fallback to a [Chart.js](https://github.com/chartjs/Chart.js) chart.
 
 ## Install
