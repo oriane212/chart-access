@@ -2,20 +2,31 @@
 <html>
 
 <head>
-	<title>chart-access</title>
+	<title>Chart-access Example</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!--  <script src="node_modules/chart.js/dist/Chart.js"></script>  -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
-
-
-
+	
+	<style>
+		article {
+			max-width: 800px;
+			width: 100%;
+			margin: 40px auto;
+		}
+	</style>
 </head>
 
 <body>
-	<canvas id="untitledChart" width="200" height="200"></canvas>
-	<canvas id="titledChart" width="200" height="200"></canvas>
-	
+	<article>
+		<canvas id="untitledChart"></canvas>
+	</article>
+	<article>
+		<canvas id="titledChart"></canvas>
+	</article>
+
 	<script src='main.js'></script>
 	<script src='example.js'></script>
 

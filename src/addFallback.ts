@@ -124,7 +124,7 @@ export function generateFallbackText(chartconfig: chartjs.ChartConfiguration) {
 
 
 /**
- * add fallback text for chart its canvas
+ * add fallback text for chart to its canvas
  * 
  * @param chart: Chart instance
  */

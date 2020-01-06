@@ -1,9 +1,9 @@
 {
   "name": "chart-access",
   "version": "1.0.0",
-  "description": "Make a chart accessible",
+  "description": "Add an accessible, auto-generated fallback to a Chart.js chart",
   "main": "main.js",
-  "module": "main.es.js",
+  "files": ["main.js"],
   "dependencies": {
     "chart.js": "^2.9.3"
   },
@@ -29,7 +29,11 @@
   "keywords": [
     "chart-access",
     "accessible",
-    "charts"
+    "chart",
+    "screen reader",
+    "html",
+    "canvas",
+    "fallback"
   ],
   "author": "oriane daley",
   "license": "MIT",

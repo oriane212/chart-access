@@ -1,27 +1,10 @@
 // Example using chart-access to add fallback text to a chart
 
 let data = {
-    datasets: [{
-        data: [{
-            x: 10,
-            y: 12
-        }, {
-            x: 15,
-            y: 19
-        }, {
-            x: 20,
-            y: 3
-        }, {
-            x: 25,
-            y: 5
-        }, {
-            x: 30,
-            y: 2
-        }, {
-            x: 35,
-            y: 3
-        }]
-    }]
+    labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+        datasets: [
+            { label: "Iced coffees", data: [5, 4, 6, 11, 18, 24, 29, 30, 26, 16, 10, 6], backgroundColor: "rgba(112, 91, 58, 0.4)" }
+        ]
 }
 
 let untitled = {
@@ -34,7 +17,7 @@ let titled = {
     data: data,
     options: {
         title: {
-            text: 'Sample data',
+            text: 'Iced Coffees Consumed Each Month of the Year',
             display: true
         }
     }

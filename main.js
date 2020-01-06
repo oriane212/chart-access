@@ -48,7 +48,7 @@ var chartaccess = (function () {
         return "" + text1;
     }
     /**
-     * add fallback text for chart its canvas
+     * add fallback text for chart to its canvas
      *
      * @param chart: Chart instance
      */
