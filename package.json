@@ -1,6 +1,6 @@
 {
   "name": "chart-access",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Add an accessible, auto-generated fallback to a Chart.js chart",
   "main": "main.js",
   "files": ["main.js"],

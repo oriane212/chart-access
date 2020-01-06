@@ -5,26 +5,36 @@ Add an accessible, auto-generated fallback to a [Chart.js](https://github.com/ch
 
 ## Install
 
-```javascript
+```bash
 npm install chart-access
 ```
 
 ## How to use
 
-Version 1.0.0 is available in ```iife``` format as ```main.js```. Reference it in ```html``` using the ```<script>``` tag:
+```javascript
+import chartaccess from 'chart-access';
+```
+or 
 
 ```html
-<body>
-    <canvas id='titledChart'></canvas>
-    <script src='path/to/chart-access/main.js'></script>
-    <script src='example.js'></script>
-<body>
+<script src='path/to/chart-access/main.js'></script>
 ```
 
-This adds a global variable ```chartaccess``` to the browser window with the ```addFallback``` function. Use ```addFallback``` to add auto-generated fallback text to the canvas for a chart created with Chart.js:
+Using chart-access with a script tag adds a global variable ```chartaccess``` to the browser window with the ```addFallback``` function. 
+
+
+### Add fallback text
+
+Use ```addFallback``` to add auto-generated fallback text to the canvas for a chart created with Chart.js.
 
 ```javascript
-/* example.js */
+chartaccess.addFallback(chart);
+```
+
+### Example
+
+```javascript
+import chartaccess from 'chart-access';
 
 // config for chart
 let chartConfig = {

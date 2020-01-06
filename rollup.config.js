@@ -5,14 +5,9 @@ import serve from 'rollup-plugin-serve';
 export default {
     input: 'src/main.ts',
     output: [
-        /*
-        {
-            file: 'pkg.module',
-            format: 'es'
-        },*/
         {
             file: 'main.js',
-            format: 'iife',
+            format: 'umd',
             name: 'chartaccess'
         }
     ],
